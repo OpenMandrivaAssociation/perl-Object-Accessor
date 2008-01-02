@@ -16,6 +16,7 @@ BuildArch:	noarch
 Buildrequires:	perl-devel
 %endif
 Buildrequires:  perl(Params::Check)
+BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 Object::Accessor provides an interface to create per object accessors (as
