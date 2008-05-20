@@ -1,6 +1,6 @@
 %define module	Object-Accessor
 %define name	perl-%{module}
-%define version 0.32
+%define version 0.34
 %define release %mkrel 1
 
 Name:		%{name}
