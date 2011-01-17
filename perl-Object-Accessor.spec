@@ -3,17 +3,12 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	%mkrel 1
-
+Release:	%mkrel 2
 Summary:	Add a Makefile target to determine test coverage using Devel::Cover
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}/
 Source0:	http://www.cpan.org/modules/by-module/Object/%{upstream_name}-%{upstream_version}.tar.gz
-
-%if %{mdkversion} < 1010
-Buildrequires:	perl-devel
-%endif
 Buildrequires:  perl(Params::Check)
 BuildArch:	noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
@@ -42,6 +37,10 @@ rm -rf %{buildroot}
 %install
 rm -rf %{buildroot}
 %makeinstall_std
+
+# fix conflict with  perl package
+mv %{buildroot}%{_mandir}/man3/Object::Accessor.3pm \
+    %{buildroot}%{_mandir}/man3/Object::Accessor.standalone.3pm
 
 %files
 %defattr(-,root,root)
