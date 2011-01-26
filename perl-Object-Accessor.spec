@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	%mkrel 2
+Release:	%mkrel 3
 Summary:	Add a Makefile target to determine test coverage using Devel::Cover
 License:	GPL+ or Artistic
 Group:		Development/Perl
@@ -37,10 +37,6 @@ rm -rf %{buildroot}
 %install
 rm -rf %{buildroot}
 %makeinstall_std
-
-# fix conflict with  perl package
-mv %{buildroot}%{_mandir}/man3/Object::Accessor.3pm \
-    %{buildroot}%{_mandir}/man3/Object::Accessor.standalone.3pm
 
 %files
 %defattr(-,root,root)
