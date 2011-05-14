@@ -1,9 +1,9 @@
 %define upstream_name	 Object-Accessor
-%define upstream_version 0.38
+%define upstream_version 0.42
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	%mkrel 4
+Release:	%mkrel 1
 Summary:	Add a Makefile target to determine test coverage using Devel::Cover
 License:	GPL+ or Artistic
 Group:		Development/Perl
