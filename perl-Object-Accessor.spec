@@ -1,14 +1,14 @@
 %define upstream_name	 Object-Accessor
-%define upstream_version 0.42
+%define upstream_version 0.48
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Version:	%perl_convert_version 0.48
+Release:	1
 Summary:	Add a Makefile target to determine test coverage using Devel::Cover
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}/
-Source0:	http://www.cpan.org/modules/by-module/Object/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Object/Object-Accessor-0.48.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Params::Check)
@@ -108,4 +108,5 @@ make test
 
 * Mon Apr 25 2005 Guillaume Rousse <guillomovitch@mandriva.org> 0.03-1mdk 
 - first mandrivalinux release
+
 
