@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version 0.48
-Release:	2
+Release:	3
 Summary:	Add a Makefile target to determine test coverage using Devel::Cover
 License:	GPL+ or Artistic
 Group:		Development/Perl
