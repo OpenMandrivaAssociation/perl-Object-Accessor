@@ -10,6 +10,7 @@ Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}/
 Source0:	http://www.cpan.org/modules/by-module/Object/Object-Accessor-0.48.tar.gz
 
+BuildRequires:	perl(Test::More)
 BuildRequires:	perl-devel
 BuildRequires:	perl(Params::Check)
 BuildArch:	noarch
